@@ -1,5 +1,7 @@
 # SFSymbols-Library
 
+![Demo](https://github.com/bfernandesbfs/SFSymbols-Library/blob/master/sample.png)
+
 ## How to use
 
 Copy this code to your project
