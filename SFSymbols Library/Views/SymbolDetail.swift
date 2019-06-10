@@ -13,7 +13,15 @@ struct SymbolDetail : View {
     var symbol: SFSymbolsLibrary
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image(systemName: symbol.rawValue)
+                .font(.system(size: 60))
+
+            Text(symbol.rawValue)
+                .font(.title)
+                .padding(.top, 100)
+
+        }
     }
 }
 

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		650DC0E422AEADF70092F5D7 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650DC0E322AEADF70092F5D7 /* Store.swift */; };
 		651702EF22AEA0C200074F3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651702EE22AEA0C200074F3D /* AppDelegate.swift */; };
 		651702F122AEA0C200074F3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651702F022AEA0C200074F3D /* SceneDelegate.swift */; };
 		651702F322AEA0C200074F3D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651702F222AEA0C200074F3D /* ContentView.swift */; };
@@ -20,7 +19,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		650DC0E322AEADF70092F5D7 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		651702EB22AEA0C200074F3D /* SFSymbols Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SFSymbols Library.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		651702EE22AEA0C200074F3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		651702F022AEA0C200074F3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,14 +43,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		650DC0E222AEADEB0092F5D7 /* Store */ = {
-			isa = PBXGroup;
-			children = (
-				650DC0E322AEADF70092F5D7 /* Store.swift */,
-			);
-			path = Store;
-			sourceTree = "<group>";
-		};
 		651702E222AEA0C200074F3D = {
 			isa = PBXGroup;
 			children = (
@@ -74,7 +64,6 @@
 			children = (
 				651702EE22AEA0C200074F3D /* AppDelegate.swift */,
 				651702F022AEA0C200074F3D /* SceneDelegate.swift */,
-				650DC0E222AEADEB0092F5D7 /* Store */,
 				65B42BFD22AEA2630045CC43 /* Utils */,
 				65B42BFC22AEA2590045CC43 /* Views */,
 				6517030222AEA0FD00074F3D /* Resource */,
@@ -198,7 +187,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				650DC0E422AEADF70092F5D7 /* Store.swift in Sources */,
 				65B42BFF22AEA2800045CC43 /* SFSymbolsLibrary.swift in Sources */,
 				651702EF22AEA0C200074F3D /* AppDelegate.swift in Sources */,
 				651702F122AEA0C200074F3D /* SceneDelegate.swift in Sources */,

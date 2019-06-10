@@ -10,25 +10,10 @@ import SwiftUI
 
 struct ContentView : View {
 
-    @ObjectBinding var store: Store
-
     var body: some View {
         NavigationView {
-            VStack {
-                HStack {
-                    Image(systemName: SFSymbolsLibrary.smagnifyingglass.rawValue)
-                    TextField($store.search, placeholder: Text("Search here"))
-                        .textFieldStyle(.roundedBorder)
-                }
-                .frame(height: 44)
-                .padding([.leading, .trailing], 16)
-
-                List(store.filter().identified(by: \.self)) { symbol in
-
-                    NavigationButton(destination: SymbolDetail(symbol: symbol)) {
-                        SymbolCell(symbol: symbol)
-                    }
-                }
+            List(SFSymbolsLibrary.allCases.identified(by: \.self)) { symbol in
+                PresentationButton(SymbolCell(symbol: symbol), destination: SymbolDetail(symbol: symbol))
             }
             .navigationBarTitle(Text("SF Symbols"), displayMode: .large)
         }
@@ -38,7 +23,7 @@ struct ContentView : View {
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {
     static var previews: some View {
-        ContentView(store: Store())
+        ContentView()
     }
 }
 #endif
